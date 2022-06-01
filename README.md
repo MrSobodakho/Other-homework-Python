@@ -1,1 +1,1 @@
-# Othetr-homework-Python
+# Other-homework-Python
