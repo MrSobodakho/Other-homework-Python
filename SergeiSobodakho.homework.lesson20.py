@@ -6,7 +6,7 @@ from random import randint
 user_in = tuple(map(int, input("Enter the number of items and their minimum and maximum values: ").split()))
             # т.к. по задаче входные данные вносятся кортежем?
 def new_list(amount_elem, min_value, max_value):
-    return list(map(lambda _: randint(min_value, max_value), range(amount_elem)))
+    return list(map(lambda my_list: randint(min_value, max_value), range(amount_elem)))
 print(new_list(*user_in))'''
 
 '''Hometask_13_6
@@ -21,9 +21,6 @@ def factorial(n):
         return (n * factorial(n-1))
 
 print(f"The factorial of a number is: {factorial(user_in)}")'''
-
-'''Hometask_13_5
-Преобразуйте задачу с покупкой торта из экзамена 2 в функцию. '''
 
 '''Hometask_13_11
 Напишите декоратор к функции деления, который меняет местами делимое и делитель.
