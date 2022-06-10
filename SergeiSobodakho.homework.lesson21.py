@@ -26,7 +26,7 @@ class Dog:
     
     def change_name(self, new_name):
         self.name = new_name
-        return self.name
+#        return self.name
 
 if __name__ == "__main__":
     pooch = Dog(0.5, 9, "Tod", 1.5)
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     pooch.jump(1.5)
     pooch.bark(70) 
 
-if __name__ == "__main__":
     hound = Dog(1.1, 23, "Avalon", 2.6)
     print(f"\nDescription of the dog: {hound.__dict__}")
-    print(f"New dog name: {hound.change_name('Devil')}") 
+    hound.change_name("Devil") 
+    print(f"\nDescription of the dog: {hound.__dict__}")
